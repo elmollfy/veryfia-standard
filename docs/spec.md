@@ -27,33 +27,27 @@ El manifiesto es un objeto JSON con los siguientes bloques:
   "verification": { ... }
 }
 
-3. Definición de campos
-3.1. version (obligatorio)
+## 3. Definición de campos
 
-Tipo: string
+### 3.1. `version` (obligatorio)
+- **Tipo:** string  
+- **Ejemplo:** `"1.0"`  
+- **Descripción:** versión del estándar Veryfia usada para generar el manifiesto.  
 
-Ejemplo: "1.0"
+---
 
-Descripción: versión del estándar Veryfia usada para generar el manifiesto.
-
-3.2. file (obligatorio)
-
-Campos:
-
-hash: string (SHA-256 en hex) → huella única del archivo.
-
-type: string (MIME type, ej. image/png, application/pdf).
-
-size_bytes: integer → tamaño en bytes.
-
-Ejemplo:
-
+### 3.2. `file` (obligatorio)
+- **Campos:**
+  - `hash`: string (SHA-256 en hex) → huella única del archivo.  
+  - `type`: string (MIME type, ej. `image/png`, `application/pdf`).  
+  - `size_bytes`: integer → tamaño en bytes.  
+- **Ejemplo:**
+```json
 "file": {
   "hash": "2bf1c7a4e1a3...e9fb",
   "type": "image/png",
   "size_bytes": 3214421
 }
-
 3.3. generator (opcional pero recomendado)
 
 Campos:
@@ -144,3 +138,4 @@ c2pa_ref: hash del manifiesto C2PA para interoperabilidad.
 6. Licencia
 
 El estándar Veryfia se publica bajo licencia MIT, abierto para uso y adopción libre.
+
