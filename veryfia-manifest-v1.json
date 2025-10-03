@@ -1,0 +1,34 @@
+
+---
+
+## 📄 veryfia-manifest-v1.json
+Guárdalo en el repo como archivo de ejemplo.
+
+```json
+{
+  "version": "1.0",
+  "file": {
+    "hash": "2bf1c7a4e1a3...e9fb",
+    "type": "image/png",
+    "size_bytes": 3214421
+  },
+  "generator": {
+    "source": "AI_GENERATED",
+    "name": "Stable Diffusion XL",
+    "version": "2.1",
+    "prompt": "cover photo, lifestyle, beach, morning light"
+  },
+  "issuer": {
+    "organization": "FotoIA S.L.",
+    "api_key_id": "vf_org_01JD2S..."
+  },
+  "anchor": {
+    "chain": "Polygon",
+    "tx_hash": "0x9a3b...42dd",
+    "merkle_root": "a4c9...7e12",
+    "anchored_at": "2025-10-02T09:32:58Z"
+  },
+  "verification": {
+    "url": "https://verify.veryfia.com/v/vf_asset_01JD2STXQ8M5G9H8"
+  }
+}
